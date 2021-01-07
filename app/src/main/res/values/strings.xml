@@ -1,0 +1,30 @@
+<resources>
+    <!-- Top lines -->
+    <string name="add_cable_type_top_tag_line">Добавить новый тип кабеля</string>
+    <string name="add_cable_line_top_tag_line">Добавить новую линию</string>
+    <string name="add_cable_qudratura_top_tag_line">Добавить новую квадратуру</string>
+
+    <string name="app_name">ForITWO5</string>
+    <string name="calculate_cable">Посчитать</string>
+    <string name="add_cable">Добавить</string>
+    <string name="show_cable">Список</string>
+    <string name="settings">Параметры</string>
+    <string name="length_cable">Длина</string>
+    <string name="type_cable">Тип</string>
+    <string name="quadratura_cable">Квадратура</string>
+    <string name="line_cable">Линия</string>
+    <string name="add_cable_type">Введи тип кабеля</string>
+    <string name="add_cable_quadratura_input">Введи квадратуру</string>
+    <string name="add_cable_line_input">Введи название линии</string>
+
+    <!-- Hints -->
+    <string name="length_cable_hint">Навали сюда длину</string>
+    <string name="type_cable_hint">Шо по типу кабеля?</string>
+    <string name="quadratura_cable_hint">Шо по квадратурe?</string>
+    <string name="line_cable_hint">Линия - хуиния</string>
+    <string name="add_cable_type_hint">(ПВС - ХУЙВЕЭС)</string>
+
+    <!-- Buttons -->
+    <string name="calculate_button">Посчитать</string>
+    <string name="add_button">Добавить</string>
+</resources>
