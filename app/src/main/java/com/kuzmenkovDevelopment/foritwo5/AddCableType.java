@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -27,7 +28,7 @@ public class AddCableType extends AppCompatActivity {
         cableTypeInputAddButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                addCableTypeToDatabase();
+                addCableTypeToDatabase();
 
                 changeToAddCableActivity();
             }
@@ -39,13 +40,13 @@ public class AddCableType extends AppCompatActivity {
         startActivity(intent);
     }
 
-//    private void addCableTypeToDatabase() {
-//        boolean insert = mDatabaseHelper.addDataToTypeTable(cableTypeInput.getText().toString());
-//
-//        if(insert){
-//            Toast.makeText(this, "ja", Toast.LENGTH_LONG).show();
-//        }else{
-//            Toast.makeText(this, "nein", Toast.LENGTH_LONG).show();
-//        }
-//    }
+    private void addCableTypeToDatabase() {
+        boolean insert = mDatabaseHelper.addDataToTypeTable(cableTypeInput.getText().toString());
+
+        if(insert){
+            Toast.makeText(this, "ja", Toast.LENGTH_LONG).show();
+        }else{
+            Toast.makeText(this, "nein", Toast.LENGTH_LONG).show();
+        }
+    }
 }

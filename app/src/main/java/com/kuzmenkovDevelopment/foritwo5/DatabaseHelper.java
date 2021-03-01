@@ -144,11 +144,17 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     }
 
     public boolean addDataToTypeTable(String typeName){
+
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues contentValues = new ContentValues();
         contentValues.put(TYPE_NAME, typeName);
 
+
+
         long result = db.insert(TYPE_TABLE_NAME, null, contentValues);
+
+        // TODO
+        Log.i("SAD", result + " =result");
         if (result == 1){
             return false;
         }else{
